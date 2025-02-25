@@ -41,6 +41,7 @@ def manda_login(agent, page, view_state)
   form_page = Nokogiri::HTML(form_html)
   form_action = form_page.at('form')&.attr('action')
 
+  # Colocar en una variable de entorno
   credenciales = 'NI900835628,Melachu_01;CC72230311,Melachu_3527;CC22524415,Melachu_01'
   user = credenciales.split(';').sample
 
@@ -109,7 +110,7 @@ def solicitar(agent, view_state)
   [agent, page, view_state]
 end
 
-def buscar(agent, view_state)
+def buscar(agent, view_state, cedula)
   url = 'https://certificados.supernotariado.gov.co/certificado/portal/business/main-queries-advanced.snr'
   headers = {
     'User-Agent' => 'Mozilla/5.0',
@@ -127,13 +128,18 @@ def buscar(agent, view_state)
     'formQueries:listaTipoResultado_input' => 'CI1',
     'formQueries:j_idt55_focus' => '',
     'formQueries:j_idt55_input' => '1',
-    'formQueries:j_idt58' => '32743136',
+    'formQueries:j_idt58' => cedula,
     'javax.faces.ViewState' => view_state
   }
 
   page = agent.post(url, data, headers)
   [agent, page]
 end
+
+# Inicia el programa
+# def hanler(event:, context)
+# Aqui colocas la logica para extraer la cedula del event
+# colocar la cedula en una variable
 
 agent = Mechanize.new
 
@@ -162,7 +168,7 @@ puts "ViewState solicitar: #{view_state}"
 # sleep(2)
 # puts page.body
 
-agent, page = buscar(agent, view_state)
+agent, page = buscar(agent, view_state, '72230311')
 # puts page.body
 
 doc = Nokogiri::XML(page.body)
@@ -189,3 +195,6 @@ annotation = {
   event_date_at: Time.now.to_i
 }
 puts annotation
+
+# Codigo para incluir la anotacion en el json de la maquina de estado
+# llamado a la maquina de estado
