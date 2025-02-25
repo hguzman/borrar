@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<partial-response>
+	<changes>
+		<update id="formQueries">
+			<![CDATA[
+<form id="formQueries" name="formQueries" method="post" action="/certificado/portal/business/main-queries-advanced.snr" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="formQueries" value="formQueries" />
+                
+                <div>
+                    <div align="center" style="padding: 6px;"><table>
+<tbody>
+<tr>
+<td><span class="text">Seleccione el producto que desea Adquirir</span></td>
+<td><div id="formQueries:listaTipoResultado" class="ui-selectonemenu ui-widget ui-state-default ui-corner-all inputModal" style="width: 282px;"><div class="ui-helper-hidden-accessible"><input id="formQueries:listaTipoResultado_focus" name="formQueries:listaTipoResultado_focus" type="text" autocomplete="off" /></div><div class="ui-helper-hidden-accessible"><select id="formQueries:listaTipoResultado_input" name="formQueries:listaTipoResultado_input" tabindex="-1" onchange="PrimeFaces.ab({s:&quot;formQueries:listaTipoResultado&quot;,e:&quot;valueChange&quot;,f:&quot;formQueries&quot;,p:&quot;formQueries:listaTipoResultado&quot;,u:&quot;formQueries&quot;});"><option value="CI1" selected="selected">Consulta Indices de Propietarios</option><option value="CNP1">Certificado de No Propiedad</option></select></div><label id="formQueries:listaTipoResultado_label" class="ui-selectonemenu-label ui-inputfield ui-corner-all">&nbsp;</label><div class="ui-selectonemenu-trigger ui-state-default ui-corner-right"><span class="ui-icon ui-icon-triangle-1-s ui-c"></span></div><div id="formQueries:listaTipoResultado_panel" class="ui-selectonemenu-panel ui-widget-content ui-corner-all ui-helper-hidden ui-shadow"><div class="ui-selectonemenu-items-wrapper" style="height:auto"><ul class="ui-selectonemenu-items ui-selectonemenu-list ui-widget-content ui-widget ui-corner-all ui-helper-reset"><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Consulta Indices de Propietarios">Consulta Indices de Propietarios</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Certificado de No Propiedad">Certificado de No Propiedad</li></ul></div></div></div><script id="formQueries:listaTipoResultado_s" type="text/javascript">$(function(){PrimeFaces.cw("SelectOneMenu","widget_formQueries_listaTipoResultado",{id:"formQueries:listaTipoResultado",widgetVar:"widget_formQueries_listaTipoResultado",behaviors:{valueChange:function(ext) {PrimeFaces.ab({s:"formQueries:listaTipoResultado",e:"valueChange",f:"formQueries",p:"formQueries:listaTipoResultado",u:"formQueries"},ext);}}});});</script></td>
+<td><button id="formQueries:j_idt42" name="formQueries:j_idt42" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" onclick="PrimeFaces.ab({s:&quot;formQueries:j_idt42&quot;,u:&quot;formQueries&quot;,onst:function(cfg){PF('loadingDialog').show();;},onco:function(xhr,status,args){PF('loadingDialog').hide();;}});return false;" type="submit"><span class="ui-button-text ui-c">Solicitar</span></button><script id="formQueries:j_idt42_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_formQueries_j_idt42",{id:"formQueries:j_idt42",widgetVar:"widget_formQueries_j_idt42"});</script></td>
+<td><button id="formQueries:j_idt43" name="formQueries:j_idt43" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" onclick="PrimeFaces.ab({s:&quot;formQueries:j_idt43&quot;,u:&quot;formQueries modalHistorial&quot;,onst:function(cfg){PF('loadingDialog').show();;},onco:function(xhr,status,args){PF('loadingDialog').hide();;}});return false;" type="submit"><span class="ui-button-text ui-c">Historial</span></button><script id="formQueries:j_idt43_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_formQueries_j_idt43",{id:"formQueries:j_idt43",widgetVar:"widget_formQueries_j_idt43"});</script></td>
+</tr>
+</tbody>
+</table>
+<span id="formQueries:panelConsultaIndices"></span><span id="formQueries:panelCertificadoNoPropiedad"></span>
+                    </div>
+                </div>
+	</form>]]>
+			</update>
+			<update id="modalMedioPago"><![CDATA[<div id="modalMedioPago" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="modalMedioPago_title" class="ui-dialog-title">Seleccion de Medio de Pago</span><a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content">
+            <div style="min-width: 320px;max-width: 560px;">
+<form id="formModalMedioPago" name="formModalMedioPago" method="post" action="/certificado/portal/business/main-queries-advanced.snr" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="formModalMedioPago" value="formModalMedioPago" />
+
+                    <div class="subTitleDialog">
+                        Transaccion <b>112894731</b> Por favor seleccione el medio de pago del cual se debitaran $<b>0</b> Pesos COP
+                    </div>
+                    <div>
+                        <div id="divMainPayment" align="center">                                                 
+                                <div class="paymentMethodContainer"><a id="formModalMedioPago:j_idt120" href="#" class="ui-commandlink ui-widget" aria-label="Transfiere usando tu cuenta de ahorros o corriente mediante PSE" onclick="PrimeFaces.ab({s:&quot;formModalMedioPago:j_idt120&quot;,u:&quot;modalResultadoTransaccion modalInformacionPago&quot;,onst:function(cfg){PF('loadingDialog').show();;},onco:function(xhr,status,args){PF('loadingDialog').hide();;}});return false;" style="font-size: 0px !important;" title="Transfiere usando tu cuenta de ahorros o corriente mediante PSE">
+                                        <div class="paymentMethod"><img src="/certificado/static/fileDispatcher/78038955-78039891-HVEMXPKEMEOGDVTBSVDT78039891.png" alt="" />                        
+                                        </div></a>
+                                </div>                                                 
+                                <div class="paymentMethodContainer"><a id="formModalMedioPago:j_idt127" href="#" class="ui-commandlink ui-widget" aria-label="Pagar usando boton Bancolombia" onclick="PrimeFaces.ab({s:&quot;formModalMedioPago:j_idt127&quot;,u:&quot;modalResultadoTransaccion modalInformacionPago&quot;,onst:function(cfg){PF('loadingDialog').show();;},onco:function(xhr,status,args){PF('loadingDialog').hide();;}});return false;" style="font-size: 0px !important;" title="Pagar usando boton Bancolombia">
+                                        <div class="paymentMethod"><img src="/certificado/static/fileDispatcher/78038960-78039896-LPMPUYFWAWJRIBTAFQZH78039896.png" alt="" />                        
+                                        </div></a>
+                                </div>                                                 
+                                <div class="paymentMethodContainer"><a id="formModalMedioPago:j_idt134" href="#" class="ui-commandlink ui-widget" aria-label="Descontar del saldo de la cuenta prepago de SNR, usted puede recargar su cuenta en la pagina principal de usuario" onclick="PrimeFaces.ab({s:&quot;formModalMedioPago:j_idt134&quot;,u:&quot;modalResultadoTransaccion modalInformacionPago&quot;,onst:function(cfg){PF('loadingDialog').show();;},onco:function(xhr,status,args){PF('loadingDialog').hide();;}});return false;" style="font-size: 0px !important;" title="Descontar del saldo de la cuenta prepago de SNR, usted puede recargar su cuenta en la pagina principal de usuario">
+                                        <div class="paymentMethod"><img src="/certificado/static/fileDispatcher/78038956-78039892-VFSDGYFYUZKZWWADVIIR78039892.png" alt="" />                        
+                                        </div></a>
+                                </div>
+                        </div>
+                    </div>
+</form>
+            </div></div></div><script id="modalMedioPago_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","dialogMedioPago",{id:"modalMedioPago",widgetVar:"dialogMedioPago",resizable:false,modal:true,minHeight:40,appendTo:"@(body)",closeOnEscape:true});});</script>]]></update><update id="modalResultadoTransaccion"><![CDATA[<div id="modalResultadoTransaccion" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="modalResultadoTransaccion_title" class="ui-dialog-title">Resultado Transaccion</span><a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content">
+            <div style="width: 980px; ">
+<form id="formModalResultado" name="formModalResultado" method="post" action="/certificado/portal/business/main-queries-advanced.snr" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="formModalResultado" value="formModalResultado" />
+
+                    <div class="subTitleDialog">
+                        Transacción finalizada correctamente, a continuación puede ver el detalle de la transacción.
+                    </div>
+                    <div><table>
+<tbody>
+<tr>
+<td><span class="text">Servicio</span></td>
+<td><span class="label">Consulta Indices</span></td>
+</tr>
+<tr>
+<td><span class="text">PIN</span></td>
+<td><span class="label">2502231447109286523</span></td>
+</tr>
+<tr>
+<td><span class="text">Recibo / Referencia</span></td>
+<td><span class="label">112894731</span></td>
+</tr>
+<tr>
+<td><span class="text">Valor</span></td>
+<td><span class="label">0</span></td>
+</tr>
+<tr>
+<td><span class="text">Fecha Consulta</span></td>
+<td><span class="label">23/02/2025 03:11 PM</span></td>
+</tr>
+</tbody>
+</table>
+
+                        <hr />
+                        <div align="center" style="font-size: 13px;color: gray;">
+                            Los siguientes son los resultados arrojados para la Consulta, puede revisar el historial de todas sus consultas presionando el botón Historial, en la pantalla principal, <b>Recuerde</b> que debe tener habilitadas las ventanas emergentes para poder descargar el reporte, la columna <b>Vinculado a</b> indica por cuál de los diferentes datos o filtros fue obtenido el registro                            
+                        </div>
+                        <div><div id="formModalResultado:consultas" class="ui-datatable ui-widget"><div class="ui-datatable-tablewrapper"><table role="grid"><thead id="formModalResultado:consultas_head"><tr role="row"><th id="formModalResultado:consultas:j_idt198" class="ui-state-default colCenter" role="columnheader" style="width:16px"><span class="ui-column-title">#</span></th><th id="formModalResultado:consultas:j_idt200" class="ui-state-default colCenter" role="columnheader" style="width:190px"><span class="ui-column-title">Ciudad</span></th><th id="formModalResultado:consultas:j_idt202" class="ui-state-default colCenter" role="columnheader" style="width:98px"><span class="ui-column-title">Matricula</span></th><th id="formModalResultado:consultas:j_idt204" class="ui-state-default colCenter" role="columnheader"><span class="ui-column-title">Direccion</span></th><th id="formModalResultado:consultas:j_idt206" class="ui-state-default colCenter" role="columnheader" style="width:78px"><span class="ui-column-title">Vinculado a</span></th></tr></thead><tbody id="formModalResultado:consultas_data" class="ui-datatable-data ui-widget-content"><tr data-ri="0" class="ui-widget-content ui-datatable-even" role="row"><td role="gridcell" class="colCenter">1</td><td role="gridcell" class="colCenter">Barranquilla - Atlantico</td><td role="gridcell" class="colCenter">040-170266</td><td role="gridcell" class="colCenter">CL 35 # 27 Y 28 27 145</td><td role="gridcell" class="colCenter">Documento</td></tr><tr data-ri="1" class="ui-widget-content ui-datatable-odd" role="row"><td role="gridcell" class="colCenter">2</td><td role="gridcell" class="colCenter">Barranquilla - Atlantico</td><td role="gridcell" class="colCenter">040-155263</td><td role="gridcell" class="colCenter">KR 23 B # 39 - 21</td><td role="gridcell" class="colCenter">Documento</td></tr></tbody></table></div><div id="formModalResultado:consultas_paginator_bottom" class="ui-paginator ui-paginator-bottom ui-widget-header ui-corner-bottom" role="navigation"><span class="ui-paginator-first ui-state-default ui-corner-all ui-state-disabled"><span class="ui-icon ui-icon-seek-first">p</span></span><span class="ui-paginator-prev ui-state-default ui-corner-all ui-state-disabled"><span class="ui-icon ui-icon-seek-prev">p</span></span><span class="ui-paginator-pages"><span class="ui-paginator-page ui-state-default ui-state-active ui-corner-all" tabindex="0">1</span></span><span class="ui-paginator-next ui-state-default ui-corner-all ui-state-disabled"><span class="ui-icon ui-icon-seek-next">p</span></span><span class="ui-paginator-last ui-state-default ui-corner-all ui-state-disabled"><span class="ui-icon ui-icon-seek-end">p</span></span></div></div><script id="formModalResultado:consultas_s" type="text/javascript">$(function(){PrimeFaces.cw("DataTable","widget_formModalResultado_consultas",{id:"formModalResultado:consultas",widgetVar:"widget_formModalResultado_consultas",paginator:{id:['formModalResultado:consultas_paginator_bottom'],rows:7,rowCount:2,page:0,currentPageTemplate:'({currentPage} of {totalPages})'}});});</script>
+                            <div align="center" style="font-size: 13px;color: gray;">
+                                Señor usuario si usted no está de acuerdo con el resultado de la consulta, por favor comuníquese con las líneas de atención al ciudadano como aparecen en el pie de página de esta plataforma, allí su inconveniente será recepcionado para brindarle una solución, o presione el boton <b>Comentario</b> en el cual podra escribir su Observacion para ser procesado por la entidad
+                            </div> 
+                        </div>
+                    </div>
+                    <div align="center" style="padding: 8px;"><table>
+<tbody>
+<tr>
+<td><button id="formModalResultado:j_idt210" name="formModalResultado:j_idt210" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" onclick="PrimeFaces.ab({s:&quot;formModalResultado:j_idt210&quot;,u:&quot;modalComentario&quot;,onco:function(xhr,status,args){PF('dialogComentario').show();;}});return false;" type="submit"><span class="ui-button-text ui-c">Comentario</span></button><script id="formModalResultado:j_idt210_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_formModalResultado_j_idt210",{id:"formModalResultado:j_idt210",widgetVar:"widget_formModalResultado_j_idt210"});</script></td>
+<td><button id="formModalResultado:j_idt211" name="formModalResultado:j_idt211" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only btnDescarga" onclick="" style="font-weight: bold !important;" type="submit"><span class="ui-button-text ui-c">Descargar Consulta Indices</span></button><script id="formModalResultado:j_idt211_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_formModalResultado_j_idt211",{id:"formModalResultado:j_idt211",widgetVar:"widget_formModalResultado_j_idt211"});</script></td>
+<td><button id="formModalResultado:j_idt213" name="formModalResultado:j_idt213" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" onclick="" type="submit"><span class="ui-button-text ui-c">Descargar Recibo</span></button><script id="formModalResultado:j_idt213_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_formModalResultado_j_idt213",{id:"formModalResultado:j_idt213",widgetVar:"widget_formModalResultado_j_idt213"});</script></td>
+<td><button id="formModalResultado:j_idt214" name="formModalResultado:j_idt214" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" onclick="PrimeFaces.ab({s:&quot;formModalResultado:j_idt214&quot;,u:&quot;formQueries&quot;,onco:function(xhr,status,args){PF('dialogResultadoTransaccion').hide();;}});return false;" type="submit"><span class="ui-button-text ui-c">Salir</span></button><script id="formModalResultado:j_idt214_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_formModalResultado_j_idt214",{id:"formModalResultado:j_idt214",widgetVar:"widget_formModalResultado_j_idt214"});</script></td>
+</tr>
+</tbody>
+</table>
+                        
+                    </div>
+</form>
+            </div></div></div><script id="modalResultadoTransaccion_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","dialogResultadoTransaccion",{id:"modalResultadoTransaccion",widgetVar:"dialogResultadoTransaccion",resizable:false,modal:true,minHeight:40,appendTo:"@(body)",closeOnEscape:true});});</script>]]></update><update id="javax.faces.ViewState"><![CDATA[-5945689761784132926:-5281187365176079589]]></update><eval><![CDATA[PF('dialogMedioPago').hide();;PF('dialogResultadoTransaccion').show();;]]></eval></changes></partial-response>
